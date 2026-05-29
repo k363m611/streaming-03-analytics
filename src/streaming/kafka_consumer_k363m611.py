@@ -351,6 +351,7 @@ def consume_messages(
         LOG.info(f"average=${stats.mean:,.2f}")
         LOG.info(f"min=${stats.minimum:,.2f}")
         LOG.info(f"max=${stats.maximum:,.2f}")
+        LOG.info(f"messages_processed={consumed_count}")
 
     return consumed_count, skipped_count
 
